@@ -4,7 +4,7 @@ import gzip
 import sys
 import pickle
 
-f = gzip.open('/data/mnist_pkl/mnist.pkl.gz', 'rb')
+f = gzip.open('/data/mnist/mnist.pkl.gz', 'rb')
 if sys.version_info < (3,):
     data = pickle.load(f)
 else:
